@@ -1,0 +1,39 @@
+<div class="register-container">
+  <div class="register-card">
+    <h2 class="title">TechConf</h2>
+    <p class="description">Register to access the event schedule</p>
+
+    <form (ngSubmit)="onRegister()" #registerForm="ngForm">
+      <div>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput type="email" name="email" [(ngModel)]="email" required>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Name</mat-label>
+          <input matInput name="name" [(ngModel)]="name" required>
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Surname</mat-label>
+          <input matInput name="surname" [(ngModel)]="surname" required>
+        </mat-form-field>
+      </div>
+
+      <div class="button-wrapper">
+        <button mat-raised-button color="primary" class="full-width"
+          style="background-color: #8854D0; color: white;">Register</button>
+      </div>
+
+      <div class="button-wrapper">
+        <button mat-stroked-button type="button" class="full-width"
+          style="color: #8854D0; border-color: #8854D0;" routerLink="/login">Back to Log In</button>
+      </div>
+    </form>
+  </div>
+</div>

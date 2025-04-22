@@ -1,0 +1,42 @@
+<div class="login-container">
+  <div class="login-card">
+    <h2 class="title">TechConf</h2>
+    <p class="description">Sign in to access the event schedule</p>
+
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" placeholder="your@email.com">
+        </mat-form-field>
+      </div>
+
+      <div>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" formControlName="password" placeholder="********">
+        </mat-form-field>
+      </div>
+
+      <div class="button-wrapper">
+        <button mat-raised-button color="primary" class="full-width"
+          style="background-color: #8854D0; color: white;">Log In</button>
+      </div>
+    </form>
+
+    <div class="divider">
+      <span>OR</span>
+    </div>
+
+    <div class="button-wrapper">
+      <button mat-stroked-button type="button" class="full-width"
+        routerLink="/register"
+        style="color: #8854D0; border-color: #8854D0;">Register</button>
+    </div>
+
+    <div class="button-wrapper">
+      <button mat-stroked-button type="button" class="full-width"
+        style="color: #8854D0; border-color: #8854D0;">Continue as Guest</button>
+    </div>
+  </div>
+</div>
