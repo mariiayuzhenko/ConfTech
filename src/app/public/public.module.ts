@@ -9,12 +9,15 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { GuestComponent } from './guest/guest.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
     // Own Components
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    GuestComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +31,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    SharedModule
   ]
 })
 export class PublicModule { }

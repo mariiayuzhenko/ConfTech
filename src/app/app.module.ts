@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { JwtModule } from '@auth0/angular-jwt';
+//import { EventCardComponent } from './shared/event-card/event-card.component';
 
 // specify the key where the token is stored in the local storage
 export const LOCALSTORAGE_TOKEN_KEY = 'angular_material_login_and_register_example';
@@ -19,7 +20,8 @@ export function tokenGetter() {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    //EventCardComponent
   ],
   imports: [
     BrowserModule,

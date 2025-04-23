@@ -20,7 +20,19 @@ const routes: Routes = [
     path: '**',
     redirectTo: 'public',
     pathMatch: 'full'
+  },
+
+  {
+    path: '',
+    redirectTo: 'public/guest',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    redirectTo: 'public/guest'
   }
+
+
 ];
 
 @NgModule({
